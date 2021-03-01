@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>contact form drill</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+  <main>
+
+  <!-- contact form -->
+  <section>
+    <h2>message me</h2>
+    <div class="group">
+        <div class="item">
+            <form>
+                <p>Why are you messaging me?</p>
+                <input name="just saying hey" type="checkbox" id="hey">
+                <label for="hey">just saying hey</label><br>
+                <input name="need anything" type="checkbox" id="need">
+                <label for="need">need anything from the store?</label><br>
+            </form>
+        </div>
+    </div>
+      <div class="item-double">
+        <form action="https://formspree.io/f/xzbklkbk" method="POST">
+          <label for="user-name">your name:</label>
+          <input id="user-name" type="text" name="name">
+
+          <label for="user-email">your email:</label>
+          <input id="user-email" type="text" name="email">
+
+          <label for="user-message">your message:</label>
+          <textarea id="user-message" name="message" placeholder="how can i help you?"></textarea>
+          
+         <button type ="submit">submit</button>
+         <button type="reset">reset</button>
+        </form>
+      </div>
+   </section>
+</main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+main {
+  padding: 30px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+main h1 {
+  margin: 0 10px;
+}
+
+main h2 {
+  color: violet;
+  margin: 12px 10px;
+  border-bottom: 1px solid violet;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  align-self: flex-start;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+  align-self: flex-start;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* ---  contact form design --- */
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+form label {
+  display: block;
+  front-size: 18px;
+  margin-bottom: 5px;
+  color: blue;
+  font-family: arial;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form button {
+  padding 10px 16px;
+  border-radius: 10px;
+  border: 0;
+  font-family: arial;
+  font-size: 16px;
+  background: white;
+  color: violet;
+  margin: 0 8px 10px 0;
+}
+
+form input[type="checkbox"] {
+  font-size: 16px;
+}
+
+form input[type="checkbox"] + label {
+
+  display: inline;
+  color: #000;
+  font-size: 16px;
+  font-family: arial;
+  text-align: align-left;
+}
+
+p {
+  font-family: arial;
+  color: blue;
+  font-size: 16px;
+}
